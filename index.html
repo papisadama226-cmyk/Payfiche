@@ -6,7 +6,8 @@
     <title>Fiche de Paiement</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#162447">
+    <meta name="theme-color" content="#000826">
+    <link rel="apple-touch-icon" href="icon-192.png">
 </head>
 <body>
 
@@ -20,6 +21,15 @@
             <div class="form-group">
                 <label for="name">Nom complet :</label>
                 <input type="text" id="name" placeholder="Ex: NANGUI ARLETTE" required>
+            </div>
+
+            <div class="form-group">
+                <label for="operator">Moyen de paiement :</label>
+                <select id="operator" required>
+                    <option value="" disabled selected>Choisir Wave ou Orange Money</option>
+                    <option value="Wave 🌊">Wave 🌊</option>
+                    <option value="Orange Money 🍊">Orange Money 🍊</option>
+                </select>
             </div>
 
             <div class="form-group">
