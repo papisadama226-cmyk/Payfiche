@@ -1,0 +1,22 @@
+{
+  "name": "Fiche de Paiement Sécurisée",
+  "short_name": "PayForm",
+  "description": "Application de fiche de paiement avec géolocalisation stricte et obligatoire.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#162447",
+  "theme-color": "#162447",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
