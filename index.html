@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche de Paiement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#162447">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Fiche de Paiement</h2>
+            <p>Enregistrement sécurisé avec géolocalisation</p>
+        </div>
+        
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="name">Nom complet :</label>
+                <input type="text" id="name" placeholder="Ex: NANGUI ARLETTE" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Numéro de téléphone :</label>
+                <input type="tel" id="phone" placeholder="Ex: 0700000000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Montant (FCFA) :</label>
+                <input type="number" id="amount" placeholder="Ex: 25000" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Statut Localisation :</label>
+                <div class="location-box">
+                    <input type="text" id="location" placeholder="Vérification GPS en cours..." readonly required>
+                </div>
+                <small id="geoStatus">Analyse de la position obligatoire...</small>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn" disabled>Enregistrer & Envoyer</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
