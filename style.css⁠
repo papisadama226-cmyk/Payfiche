@@ -1,7 +1,10 @@
+/* --- NOUVEAU DESIGN BLEU PHOSPHORESCENT --- */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a2e;
-    color: #fff;
+    /* Fond bleu nuit très sombre pour contraste */
+    background-color: #000212;
+    color: #e0faff; /* Texte par défaut très clair */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,13 +15,14 @@ body {
 }
 
 .container {
-    background: #162447;
+    background: #000826; /* Container bleu très foncé */
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    /* Glimmer bleu phosphorescent autour du container */
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.4);
     width: 100%;
     max-width: 420px;
-    border: 1px solid #1f4068;
+    border: 1px solid #142e8a; /* Bordure discrète */
 }
 
 .header {
@@ -28,14 +32,17 @@ body {
 
 .header h2 {
     margin: 0;
-    color: #e43f5a;
+    color: #00e5ff; /* Bleu cyan néon */
     font-size: 24px;
+    /* Effet phosphorescent sur le titre principal */
+    text-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
 }
 
 .header p {
     margin: 5px 0 0 0;
-    color: #bfa393;
+    color: #00bfff; /* Bleu glacier */
     font-size: 14px;
+    font-style: italic;
 }
 
 .form-group {
@@ -46,15 +53,16 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #bfa393;
+    color: #00bfff; /* Labels bleu glacier */
     font-size: 14px;
 }
 
 input {
     width: 100%;
     padding: 14px;
-    border: 1px solid #1f4068;
-    background-color: #1a1a2e;
+    /* Bordure phosphorescente */
+    border: 1px solid #00bfff;
+    background-color: #000517; /* Fond input foncé */
     color: #fff;
     border-radius: 8px;
     box-sizing: border-box;
@@ -64,28 +72,32 @@ input {
 
 input:focus {
     outline: none;
-    border-color: #e43f5a;
-    box-shadow: 0 0 8px rgba(228, 63, 90, 0.4);
+    border-color: #00e5ff;
+    /* Lueur plus intense au focus */
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
 }
 
 input[readonly] {
-    background-color: #111122;
-    border-color: #222;
-    color: #888;
+    background-color: #00030f;
+    border-color: #0a1f5a; /* Bordure éteinte */
+    color: #142e8a; /* Texte éteint */
     cursor: not-allowed;
+    box-shadow: none;
 }
 
 small {
     display: block;
     margin-top: 6px;
     font-size: 12px;
-    color: #e43f5a;
+    color: #00e5ff; /* Texte cyan pour contraste */
     font-weight: 500;
+    text-shadow: 0 0 5px #00e5ff; /* Petite lueur */
 }
 
 .submit-btn {
     width: 100%;
-    background-color: #e43f5a;
+    /* Bouton bleu électrique intense */
+    background: linear-gradient(45deg, #0012ff, #0073ff);
     color: white;
     border: none;
     padding: 16px;
@@ -93,16 +105,20 @@ small {
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all 0.2s ease;
     margin-top: 10px;
+    /* Lueur phosphorescente intense sur le bouton */
+    box-shadow: 0 0 15px #0012ff, 0 0 25px #0073ff;
 }
 
 .submit-btn:hover:not(:disabled) {
-    background-color: #ff4a6b;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px #0012ff, 0 0 40px #0073ff;
 }
 
 .submit-btn:disabled {
-    background-color: #4b5d67;
-    color: #888;
+    background: #0d123d; /* Version éteinte pour disabled */
+    color: #142e8a;
     cursor: not-allowed;
+    box-shadow: none;
 }
